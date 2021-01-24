@@ -18,6 +18,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: #f2f2f2;
+  color: #000000;
   /* выше установили ограничения для секции */
 }
 
@@ -30,13 +31,13 @@
   height: 32px;
   top: 30px;
   left: 64px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__title {
   text-align: left;
   margin: 64px;
-  z-index: 1;
+  z-index: 2;
   position: relative;
   width: 730px;
   font-size: 102px;
@@ -46,7 +47,7 @@
 
 .header__subtitle {
   text-align: left;
-  z-index: 1;
+  z-index: 2;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
@@ -54,6 +55,7 @@
   position:absolute;
   left: 64px;
   bottom: 30px;
+  margin: 0;
 }
 
 .header__link {
@@ -67,6 +69,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 1;
 }
 
 .header__square-pic {
@@ -76,7 +79,7 @@
   position: absolute;
   top: 64px;
   right: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 .content {
@@ -85,6 +88,7 @@
 .description {
   display: flex;
   position: relative;
+  color: #000000;
 }
 
 .two-columns {
@@ -126,6 +130,63 @@
   font-weight: bold;
 }
 
+.digits {
+  padding: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  color: #000000;
+}
+
+.section-title_theme_dark {
+  color: white;
+}
+
+.section-subtitle {
+  width: 60%;
+  position: relative;
+  margin: 20px auto 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+}
+
+.table {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  padding: 0;
+  width: 1100px;
+}
+
+.table_theme_dark {
+}
+
+.table__cell {
+  list-style: none;
+  width: 250px;
+  margin-top: 60px;
+  margin-bottom: 0;
+  color: #000000;
+}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -135,18 +196,39 @@
   margin-top: 80px;
 }
 
+.table__heading {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__heading_theme_dark {
+}
+
+.table__text {
+  margin: 20px 0 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.table__text_theme_dark {
+}
+
 .feynman {
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: #f2f2f2;
   height: 790px;
-  margin: 0 auto;
+  padding-top: 100px;
+  color: #000000;
 }
 
 .feynman__title {
   width: 648px;
-  margin: 100px auto 0;
+  margin: 0 auto;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
@@ -183,9 +265,91 @@
   z-index: 0;
 }
 
+.kaufman {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color:  #1f1f1f;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.kaufman__triangle {
+  z-index: -1;
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: 100%;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  display: flex;
+  position: relative;
+  min-height: 350px;
+  color: white;
+}
+
+.footer__columns {
+  margin: 60px auto 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__column_content_info {
+}
+
+.footer__column_content_social {
+}
+
 .logo_place_footer {
   height: 35px;
-  position: absolute;
+  position: relative;
   z-index: 2;
-  background-color:  #1f1f1f;
+}
+
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 18px 0;
+  position: relative;
+}
+
+.footer__column-heading {
+  margin: 0;
+  font-weight: bold;
+}
+
+.footer__column-links {
+  list-style: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px 0 16px;
+  padding-left: 0;
+}
+
+.footer__column-link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__social-icon {
+  margin: 0 10px 0 0;
+  width: 16px;
+  height: 16px;
 }
