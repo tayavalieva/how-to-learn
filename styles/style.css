@@ -36,7 +36,7 @@
 
 .header__title {
   text-align: left;
-  margin: 64px;
+  margin: 0 0 0 64px;
   z-index: 2;
   position: relative;
   width: 730px;
@@ -63,7 +63,7 @@
   color:  #2f80ed;
 }
 
-.header__main_illustration {
+.header__main-illustration {
   width: 765px;
   height: 608px;
   position: absolute;
@@ -95,7 +95,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 100px auto -30px;
+  margin: 100px auto 0;
   width: 80%;
 }
 
@@ -121,7 +121,11 @@
 }
 
 .two-columns__paragraph {
-  margin: 0 0 30px;
+  margin: 0 0 30px 0;
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -273,7 +277,7 @@
   flex-direction: column;
   background-color:  #1f1f1f;
   overflow: hidden;
-  z-index: -2;
+  z-index: 0;
 }
 
 .kaufman__triangle {
@@ -300,6 +304,10 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
+}
+
+.footer__column {
+
 }
 
 .footer__column_content_copyright {
@@ -331,6 +339,8 @@
 
 .footer__column-heading {
   margin: 0;
+  line-height: 30px;
+  font-size: 18px;
   font-weight: bold;
 }
 
