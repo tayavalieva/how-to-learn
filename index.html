@@ -4,17 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="pages/index.css">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
-      <a href="#">
+      <a href="#" class="page__link">
         <img class="logo logo_place_header" src="./images/logo_place_header.svg" alt="лого яндекс практикум">
       </a>
       <h1 class="header__title">Научиться учиться</h1>
-      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a href="#" class="header__link">Узнать &rarr;</a></p>
+      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a href="#" class="header__link page__link">Узнать &rarr;</a></p>
       <img src="./images/header-image.png" alt="изображение картины Фёдора Решетникова Опять двойка" class="header__main-illustration">
       <div class="header__square-pic rotation"></div>
     </header>
@@ -28,6 +27,33 @@
             <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
           </div>
         </div>
+      </section>
+      <section class="techniques">
+
+      </section>
+
+      <section class="video">
+        <h2 class="section-title">Видео на TED</h2>
+        <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+        <div class="video__iframes">
+          <iframe class="video__iframe" width="560" height="315" src="https://www.youtube.com/embed/5MgBikgcWnY"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <iframe class="video__iframe" width="560" height="315" src="https://www.youtube.com/embed/arj7oStGLkU"
+          frameborder="0" allow="accelerometer; autoplay;
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+      <section class="oakley">
+
+      </section>
+
+      <section class="feynman">
+        <h2 class="feynman__title">Метод Фейнмана</h2>
+        <p class="feynman__subtitle">Выучить и не забыть.</p>
+        <a href="#" class="feynman__link page__link">Подробнее &rarr;</a>
+        <img src="./images/feynman.png" alt="изображение Ричарда Фейнмана" class="feynman__img">
       </section>
 
       <section class="digits">
@@ -71,12 +97,7 @@
           </ul>
       </section>
 
-      <section class="feynman">
-        <h2 class="feynman__title">Метод Фейнмана</h2>
-        <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <a href="#" class="feynman__link">Подробнее &rarr;</a>
-        <img src="images/feynman.png" alt="изображение Ричарда Фейнмана" class="feynman__img">
-      </section>
+
 
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
@@ -125,11 +146,22 @@
         </ul>
         <div class="kaufman__triangle rotation"></div>
       </section>
+      <section class="resources">
+        <h2 class="section-title">Полезные ресурсы</h2>
+        <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+        <div class="resources__logo-zone">
+          <a href="https://arzamas.academy/" class="page__link"><img src="./images/logo/resources-arzamas.svg" alt="логотип Арзамас" class="resources__logo"></a>
+          <a href="https://nplus1.ru/" class="page__link"><img src="./images/logo/resources-n1.svg" alt="логотип N+1" class="resources__logo"></a>
+          <a href="https://strelka.com/ru" class="page__link"><img src="./images/logo/resources-strelka.svg" alt="логотип Стрелка" class="resources__logo"></a>
+          <a href="https://polka.academy/" class="page__link"><img src="./images/logo/resources-polka.svg" alt="логотип Полка" class="resources__logo"></a>
+        </div>
+
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <a href="#">
+          <a href="#" class="page__link">
             <img class="logo logo_place_footer" src="./images/logo_place_footer.svg" alt="лого яндекс практикум">
           </a>
           <p class="footer__author">&copy; 2021. Тая Валиева</p>
@@ -137,25 +169,25 @@
         <nav class="footer__column footer__column_content_info">
           <h3 class="footer__column-heading">О Практикуме</h3>
           <ul class="footer__column-links">
-            <li><a href="#" class="footer__column-link">Главная</a></li>
-            <li><a href="#" class="footer__column-link">Концепция</a></li>
-            <li><a href="#" class="footer__column-link">Наставники</a></li>
+            <li><a href="#" class="footer__column-link page__link">Главная</a></li>
+            <li><a href="#" class="footer__column-link page__link">Концепция</a></li>
+            <li><a href="#" class="footer__column-link page__link">Наставники</a></li>
           </ul>
         </nav>
         <div class="footer__column footer__column_content_social">
           <h3 class="footer__column-heading">Соцсети</h3>
           <ul class="footer__column-links">
             <li>
-              <a href="#" class="footer__column-link">
-              <img class="footer__social-icon" src="images/facebook_color_white.svg" alt="логотип facebook">
+              <a href="#" class="footer__column-link page__link">
+              <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="логотип facebook">
               Facebook</a></li>
             <li>
-              <a href="#" class="footer__column-link">
-              <img class="footer__social-icon" src="images/vk_color_white.svg" alt="логотип вконтакте">
+              <a href="#" class="footer__column-link page__link">
+              <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="логотип вконтакте">
               ВКонтакте</a></li>
             <li>
-              <a href="#" class="footer__column-link">
-              <img class="footer__social-icon" src="images/instagram_color_white.svg" alt="логотип instagram">
+              <a href="#" class="footer__column-link page__link">
+              <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="логотип instagram">
               Instagram</a></li>
           </ul>
         </div>
