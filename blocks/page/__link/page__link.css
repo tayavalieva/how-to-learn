@@ -3,6 +3,7 @@
 }
 
 .page__link:hover {
-  opacity: 0.4;
-  transition: opacity 1s;
+  opacity: .4;
+  transition: opacity .7s;
+  transition-timing-function: ease-in;
 }
