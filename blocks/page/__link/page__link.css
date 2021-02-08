@@ -1,9 +1,0 @@
-.page__link {
-  opacity: 1;
-}
-
-.page__link:hover {
-  opacity: .4;
-  transition: opacity .7s;
-  transition-timing-function: ease-in;
-}
